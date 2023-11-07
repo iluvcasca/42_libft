@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 19:52:48 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/07 22:37:49 by kgriset          ###   ########.fr       */
+/*   Created: 2023/11/07 19:10:09 by kgriset           #+#    #+#             */
+/*   Updated: 2023/11/07 22:40:31 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <ctype.h>
 #include <stdio.h>
 
-int ft_isalpha(int c) {
-  if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+int ft_isprint(int c) {
+  if ((c >= '\t' && c <= '\r') || (c >= ' ' && c <= '~') )
     return (c);
   else
-    return 0;
+    return (0);
 }
 
 int main() {
@@ -24,8 +25,10 @@ int main() {
   while (1) {
     scanf("%c%*c", &input);
     printf("\n");
-    printf("isalpha: %c: %s\n", input, isalpha((unsigned char) input) ?  "success" : "failure");
-    printf("ft_isalpha: %c: %s\n\n", input, ft_isalpha((unsigned char) input) ? "success" : "failure");
+    printf("isprint: %c: %s\n", input,
+           isprint((unsigned char)input) ? "success" : "failure"
+           );
+    printf("ft_isprint: %c: %s\n\n", input,
+           ft_isprint((unsigned char)input) ? "success" : "failure");
   }
-  return (0);
 }

@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 14:49:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 21:55:26 by kgriset          ###   ########.fr       */
+/*   Created: 2023/11/09 08:55:04 by kgriset           #+#    #+#             */
+/*   Updated: 2023/11/09 10:01:18 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void ft_bzero (void *s, size_t n){
-   unsigned char *ptr = (unsigned char *)s;
+void *memcpy(void *dest, const void *src, size_t n){
+    char *ptr = dest;
     while (n>0)
     {
-        *ptr = '\0';
+        *ptr = *(char *)src;
         ptr++;
+        src++;
         n--;
     }
+    return (dest);
 }
 
-int main() {
-   char str1[] = "0123456789";
-    char str2[] = "0123456789";
-    ft_bzero (str1 + 8, 2);
-    printf("ft_bzero: %s\n", str1);
-    bzero (str2 + 8, 2);
-    printf("bzero: %s\n", str2);
-    return (1);
+int main(){
+    char *str = "Hello 42";
+    char *dest = (char*)malloc(strlen(str)+1);
+    dest = (char*) memcpy((void*)dest,(void*)str,9);
+    char *dest2 = (char*)malloc(strlen(str)+1);
+    dest2 = (char*) memcpy((void*)dest2,(void*)str,9);
+    printf("memcpy: %s\n", dest);
+    printf("ft_memcpy: %s\n", dest2);
+    free(dest);
+    free(dest2);
 }

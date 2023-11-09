@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 14:49:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 21:55:26 by kgriset          ###   ########.fr       */
+/*   Created: 2023/11/09 10:48:58 by kgriset           #+#    #+#             */
+/*   Updated: 2023/11/09 13:26:19 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void ft_bzero (void *s, size_t n){
-   unsigned char *ptr = (unsigned char *)s;
-    while (n>0)
-    {
-        *ptr = '\0';
-        ptr++;
-        n--;
-    }
-}
+// size_t strlcpy(char * dst, const char * src, size_t dstsize){
+//     size_t i = dstsize;
+//     while (i > 1)
+//     {
+//         *dst = *src;
+//         dst++;
+//         src++;
+//         i--;
+//     }
+//     *dst = '\0';
+//     return (;
+// }
 
-int main() {
-   char str1[] = "0123456789";
-    char str2[] = "0123456789";
-    ft_bzero (str1 + 8, 2);
-    printf("ft_bzero: %s\n", str1);
-    bzero (str2 + 8, 2);
-    printf("bzero: %s\n", str2);
+int main(){
+    char src[] = { 'h', 'e', 'l', 'l', 'o' };
+    char dst[6];
+    printf("size_t: %zu\n", strlcpy (dst, src, 5));
+    printf("dst: %s\n", dst);
     return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:21:19 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 11:28:31 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/09 15:15:14 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ int ft_atoi(const char *nptr) {
 }
 
 int main() { 
-	char *nptr = "   \t\n+42   4";
-	printf("atoi: %i\n", atoi(nptr));
+	char *nptr = "   \t\n-2147483648   4";
+	printf("   atoi: %i\n", atoi(nptr));
 	printf("ft_atoi: %i\n", ft_atoi(nptr));
 	return (1);
 }

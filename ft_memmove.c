@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:17 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 10:48:02 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/10 14:49:11 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 #include <string.h>
 
 void *ft_memmove(void *dest, const void *src, size_t n) {
+	if (src == dest)
+		return dest;
   char temp[n];
   char *cpy = (char *)dest;
   size_t i = 0;

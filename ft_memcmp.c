@@ -6,13 +6,13 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:02:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 14:34:46 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/10 18:02:01 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
-
+//retest sur mac
 int ft_memcmp(const void *s1, const void *s2, size_t n){
     unsigned int i = 0;
     while (n > 0)

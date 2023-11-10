@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:17 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 14:49:11 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/10 17:51:35 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,42 @@
 #include <stdlib.h>
 #include <string.h>
 
+void *ft_memcpy(void *dest, const void *src, size_t n){
+    char *ptr = dest;
+    if (dest == src)
+	    return dest;
+    while (n>0)
+    {
+        *ptr = *(char *)src;
+        ptr++;
+        src++;
+        n--;
+    }
+    return (dest);
+}
+
 void *ft_memmove(void *dest, const void *src, size_t n) {
-	if (src == dest)
-		return dest;
-  char temp[n];
-  char *cpy = (char *)dest;
-  size_t i = 0;
-  while (i < n) {
-    temp[i] = *(char *)src;
-    src++;
-    i++;
-  }
-  src -= n;
-  i = 0;
-  while (i < n) {
-    *cpy = temp[i];
-    cpy++;
-    i++;
-  }
+	size_t i;
+	unsigned int overlap = 0;
+	if (dest == src)
+	       return dest;	
+	//else if (dest < src && dest+n >= src)
+	//	overlap = 1;
+	else if (dest > src && src+n >= dest)
+		overlap = 2;
+	if (overlap == 2)
+	{
+		while (n>0)
+		{
+			i = n-1;
+			*(unsigned char*)(dest+i) = *(unsigned char*)(src+i);
+			n--;
+		}
+		return (dest);
+
+	}
+	else
+		return (ft_memcpy(dest,src,n));		
 
   return dest;
 }
@@ -39,7 +57,7 @@ void *ft_memmove(void *dest, const void *src, size_t n) {
 int main() {
   char str[15] = "Hello42";
   memmove(str + 5, str, 8);
-  printf("memmove: %s\n", str);
+  printf("   memmove: %s\n", str);
   char str2[15] = "Hello42";
   ft_memmove(str2 + 5, str2, 8);
   printf("ft_memmove: %s\n", str2);

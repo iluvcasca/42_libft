@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:02:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 15:08:22 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/10 11:50:05 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n){
 int main () {
     int array[3] = { 134, 43434343, 43};
     int array2[3] = { 134, 43434343, 45};
-    printf("   memcmp: %i\n", memcmp(array, array2, 12));
+    printf("   memcmp: %i\n", memcmp(array, array2, 3* sizeof(int)));
     printf("ft_memcmp: %i\n", ft_memcmp(array, array2, 3 * sizeof(int)));
     return (1);
 }

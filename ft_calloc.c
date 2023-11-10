@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:00:33 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 17:58:16 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/10 11:40:31 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ int main() {
   void *p4 = ft_calloc(0, (size_t)-1);
   printf("ft_calloc: %p\n",p4);
   free(p4);
+  printf("SIZE_T_MAX: %zu\n",(size_t)-1);
   return (1);
 }

@@ -6,11 +6,12 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 14:06:28 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:04:56 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:57:24 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
+#include "libft.h"
 void *ft_memset(void *s, int c, size_t n){
     unsigned char *ptr;
     ptr = (unsigned char *)s;

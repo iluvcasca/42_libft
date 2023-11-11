@@ -6,10 +6,11 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 14:49:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:08:26 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:55:35 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void ft_bzero (void *s, size_t n){
    unsigned char *ptr = (unsigned char *)s;

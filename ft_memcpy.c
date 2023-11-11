@@ -6,10 +6,11 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 08:55:04 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:08:48 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:56:58 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 void *ft_memcpy(void *dest, const void *src, size_t n){
     char *ptr = dest;

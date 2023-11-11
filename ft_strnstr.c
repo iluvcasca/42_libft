@@ -6,10 +6,11 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:16:20 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:03:28 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:58:20 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 char * ft_strnstr(const char *big, const char *little, size_t len){
 	size_t i;

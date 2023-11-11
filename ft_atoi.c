@@ -6,17 +6,12 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:21:19 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:05:31 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:55:30 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 
-int ft_isdigit(int c) {
-  if (c >= '0' && c <= '9')
-    return (c);
-  else
-    return (0);
-}
 
 int ft_atoi(const char *nptr) {
 	int i = 0;

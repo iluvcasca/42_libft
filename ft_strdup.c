@@ -6,10 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:42:54 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:06:11 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:57:53 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdlib.h>
 
 char *ft_strdup(const char *s){
     char *s_dupe;
@@ -30,7 +30,6 @@ char *ft_strdup(const char *s){
 }
 
 #include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
 int main () {
     char * str = "hello 42";

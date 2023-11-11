@@ -6,10 +6,11 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:02:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:02:53 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:56:53 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 //retest sur mac
 int ft_memcmp(const void *s1, const void *s2, size_t n){
     unsigned int i = 0;

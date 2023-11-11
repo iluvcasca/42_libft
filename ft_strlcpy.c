@@ -6,9 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:48:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:06:53 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:58:02 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize) {

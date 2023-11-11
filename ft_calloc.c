@@ -6,19 +6,13 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:00:33 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:06:21 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 18:55:55 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <stdlib.h>
 
-void ft_bzero(void *s, size_t n) {
-  unsigned char *ptr = (unsigned char *)s;
-  while (n > 0) {
-    *ptr = '\0';
-    ptr++;
-    n--;
-  }
-}
 
 void *ft_calloc(size_t nmemb, size_t size) {
   if (!nmemb || !size)

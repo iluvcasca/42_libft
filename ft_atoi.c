@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:21:19 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 11:18:24 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:05:31 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h> 
 
 int ft_isdigit(int c) {
   if (c >= '0' && c <= '9')
@@ -41,6 +39,8 @@ int ft_atoi(const char *nptr) {
 	return (result*sign);
 }
 
+#include <stdlib.h>
+#include <stdio.h> 
 int main() { 
 	char *nptr = "   \t\n-2147483648   4";
 	printf("   atoi: %i\n", atoi(nptr));

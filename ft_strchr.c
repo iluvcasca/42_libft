@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:44:54 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 13:56:33 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:06:43 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 char *ft_strchr(const char *s, int c){
     int i = 0;
@@ -25,6 +23,8 @@ char *ft_strchr(const char *s, int c){
     return (0);
 }
 
+#include <string.h>
+#include <stdio.h>
 int main (){
     char * str= "ilove42";
     printf("   strchr: %p\n", strchr(str, '4'));

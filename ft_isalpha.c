@@ -6,11 +6,9 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 19:52:48 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 22:40:38 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:03:42 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <ctype.h>
-#include <stdio.h>
 
 int ft_isalpha(int c) {
   if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
@@ -19,6 +17,8 @@ int ft_isalpha(int c) {
     return 0;
 }
 
+#include <ctype.h>
+#include <stdio.h>
 int main() {
   char input;
   while (1) {

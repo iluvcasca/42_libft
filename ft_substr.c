@@ -6,11 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:25:12 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 11:25:16 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:08:37 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t i = 0;
@@ -32,7 +31,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 		return (sub);
 	}
 }
+
 #include <stdio.h>
+#include <stdlib.h>
 int main ()
 {
 	char *str = "Hello 42";

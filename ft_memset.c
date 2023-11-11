@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 14:06:28 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 14:46:54 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:04:56 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 void *ft_memset(void *s, int c, size_t n){
     unsigned char *ptr;
@@ -25,6 +23,8 @@ void *ft_memset(void *s, int c, size_t n){
     return s;
 }
 
+#include <string.h>
+#include <stdio.h>
 int main() {
     char buffer[21];
     buffer[20] = '\0';

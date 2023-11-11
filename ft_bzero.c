@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 14:49:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 21:55:26 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:08:26 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 void ft_bzero (void *s, size_t n){
    unsigned char *ptr = (unsigned char *)s;
@@ -23,6 +21,8 @@ void ft_bzero (void *s, size_t n){
     }
 }
 
+#include <string.h>
+#include <stdio.h>
 int main() {
    char str1[] = "0123456789";
     char str2[] = "0123456789";

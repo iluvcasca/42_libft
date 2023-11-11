@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:08:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 14:18:26 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:04:37 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 int ft_strncmp(const char *s1, const char *s2, size_t n){
     int i = 0;
@@ -25,6 +23,8 @@ int ft_strncmp(const char *s1, const char *s2, size_t n){
     return (0);
 }
 
+#include <string.h>
+#include <stdio.h>
 int main() {
     char *str = "hello 42";
     char *str2 = "hello 42";

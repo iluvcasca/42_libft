@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:29:40 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 13:42:04 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:03:15 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
 
 int ft_toupper(int c) {
   if (c >= 'a' && c <= 'z')
@@ -20,6 +18,8 @@ int ft_toupper(int c) {
     return c;
 }
 
+#include <ctype.h>
+#include <stdio.h>
 int main(){
     unsigned char input;
     while (1)

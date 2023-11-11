@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:51:26 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/08 14:05:59 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:09:09 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 
 size_t ft_strlen(const char *s) {
   size_t i = 0;
@@ -20,6 +18,8 @@ size_t ft_strlen(const char *s) {
   return i;
 }
 
+#include <stdio.h>
+#include <string.h>
 int main() {
     printf("ft_strlen: %zu\n", ft_strlen("hello"));
     printf("strlen: %zu\n", ft_strlen("hello"));

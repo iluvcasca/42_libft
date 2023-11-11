@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 22:54:03 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 23:29:47 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:07:49 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-#include <stdio.h>
 
 size_t ft_strlcat(char *dst, const char*src, size_t size)
 {
@@ -42,6 +40,8 @@ size_t ft_strlcat(char *dst, const char*src, size_t size)
     }
 }
 
+#include <bsd/string.h>
+#include <stdio.h>
 int main ()
 {
     char dst[30] = "Hello";

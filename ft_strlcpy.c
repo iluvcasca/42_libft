@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:48:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 22:47:29 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:06:53 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
 
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize) {
   size_t src_len;
@@ -28,6 +26,8 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize) {
   return (src_len);
 }
 
+#include <stdio.h>
+#include <bsd/string.h>
 int main() {
   char src[] = "hello";
   char dst[6];

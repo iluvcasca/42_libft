@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:02:58 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 18:02:01 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:02:53 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 //retest sur mac
 int ft_memcmp(const void *s1, const void *s2, size_t n){
     unsigned int i = 0;
@@ -27,6 +25,8 @@ int ft_memcmp(const void *s1, const void *s2, size_t n){
     return (0);
 }
 
+#include <string.h>
+#include <stdio.h>
 int main () {
     int array[3] = { 134, 43434343, 43};
     int array2[3] = { 134, 43434343, 45};

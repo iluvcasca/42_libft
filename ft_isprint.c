@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:10:09 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/07 22:40:31 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:09:21 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
 
 int ft_isprint(int c) {
   if ((c >= '\t' && c <= '\r') || (c >= ' ' && c <= '~') )
@@ -20,6 +18,8 @@ int ft_isprint(int c) {
     return (0);
 }
 
+#include <ctype.h>
+#include <stdio.h>
 int main() {
   char input;
   while (1) {

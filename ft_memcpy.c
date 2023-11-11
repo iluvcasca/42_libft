@@ -6,13 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 08:55:04 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 14:45:44 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:08:48 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 void *ft_memcpy(void *dest, const void *src, size_t n){
     char *ptr = dest;
@@ -28,6 +25,9 @@ void *ft_memcpy(void *dest, const void *src, size_t n){
     return (dest);
 }
 
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 int main(){
     char *str = "Hello 42";
     char *dest = (char*)malloc(strlen(str)+1);

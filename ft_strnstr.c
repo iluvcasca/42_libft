@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:16:20 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 16:28:44 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:03:28 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-#include <stdio.h>
 
 char * ft_strnstr(const char *big, const char *little, size_t len){
 	size_t i;
@@ -44,6 +42,8 @@ char * ft_strnstr(const char *big, const char *little, size_t len){
 	return (NULL);
 }
 
+#include <bsd/string.h>
+#include <stdio.h>
 
 int main() {
 	const char *largestring = "Foo Bar Baz";

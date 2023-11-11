@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:56:48 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/09 14:08:00 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:07:33 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 
 char *ft_strrchr(const char *s, int c){
     int i = 0;
@@ -27,6 +25,8 @@ char *ft_strrchr(const char *s, int c){
     return ptr;
 }
 
+#include <string.h>
+#include <stdio.h>
 int main(){
     char * str = "hel\0lo";
     printf("   strrchr: %p\n", strrchr(str,'0'));

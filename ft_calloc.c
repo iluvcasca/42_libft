@@ -6,12 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:00:33 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 14:20:34 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:06:21 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 
 void ft_bzero(void *s, size_t n) {
   unsigned char *ptr = (unsigned char *)s;
@@ -34,6 +32,8 @@ void *ft_calloc(size_t nmemb, size_t size) {
   }
 }
 
+#include <stdio.h>
+#include <stdlib.h>
 int main() {
   printf("overflow:\n");
   void *p1 = calloc((size_t)-1, (size_t)-1);

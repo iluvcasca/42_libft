@@ -6,13 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:17 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/10 17:51:35 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/11 15:08:13 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 void *ft_memcpy(void *dest, const void *src, size_t n){
     char *ptr = dest;
@@ -54,6 +51,9 @@ void *ft_memmove(void *dest, const void *src, size_t n) {
   return dest;
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 int main() {
   char str[15] = "Hello42";
   memmove(str + 5, str, 8);

@@ -1,6 +1,6 @@
 #! /bin/bash
 
 for file in *.c; do
-    sed -i '/^\/\/#include/,/^\/\/}/ s/^\/\///' $file
+    sed -i '/^#include/,/^}/ s/^/\/\//' $file
 done
-echo "main uncommented"
+echo "main commented out"

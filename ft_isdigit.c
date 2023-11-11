@@ -19,18 +19,18 @@ int ft_isdigit(int c) {
 }
 
 
-#include <ctype.h>
-#include <stdio.h>
-
-int main() {
-  char input;
-  while (1) {
-    scanf("%c%*c", &input);
-    printf("\n");
-    printf("isdigit: %c: %s\n", input,
-           isdigit((unsigned char)input) ? "success" : "failure"
-           );
-    printf("ft_isdigit: %c: %s\n\n", input,
-           ft_isdigit((unsigned char)input) ? "success" : "failure");
-  }
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//
+//int main() {
+//  char input;
+//  while (1) {
+//    scanf("%c%*c", &input);
+//    printf("\n");
+//    printf("isdigit: %c: %s\n", input,
+//           isdigit((unsigned char)input) ? "success" : "failure"
+//           );
+//    printf("ft_isdigit: %c: %s\n\n", input,
+//           ft_isdigit((unsigned char)input) ? "success" : "failure");
+//  }
+//}

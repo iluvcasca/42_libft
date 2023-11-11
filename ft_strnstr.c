@@ -43,22 +43,22 @@ char * ft_strnstr(const char *big, const char *little, size_t len){
 	return (NULL);
 }
 
-#include <bsd/string.h>
-#include <stdio.h>
-
-int main() {
-	const char *largestring = "Foo Bar Baz";
-        const char *smallstring = "Bar";	
-	printf("ft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 4));
-	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 4));
-	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 8));
-	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 8));
-	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 2));
-	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 2));
-	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 40));
-	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 40));
-
-
-
-return (1);	
-}
+//#include <bsd/string.h>
+//#include <stdio.h>
+//
+//int main() {
+//	const char *largestring = "Foo Bar Baz";
+//        const char *smallstring = "Bar";	
+//	printf("ft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 4));
+//	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 4));
+//	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 8));
+//	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 8));
+//	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 2));
+//	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 2));
+//	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 40));
+//	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 40));
+//
+//
+//
+//return (1);	
+//}

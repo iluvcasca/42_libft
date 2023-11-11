@@ -24,17 +24,17 @@ void *ft_memset(void *s, int c, size_t n){
     return s;
 }
 
-#include <string.h>
-#include <stdio.h>
-int main() {
-    char buffer[21];
-    buffer[20] = '\0';
-    
-    ft_memset(buffer, 'k', 10);
-    ft_memset(buffer + 10, 'o', 10);
-    printf("ft_memset: %s\n", buffer); 
-    memset(buffer, 'o', 10);
-    memset(buffer+10, 'k', 10);
-    printf("   memset: %s\n", buffer); 
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main() {
+//    char buffer[21];
+//    buffer[20] = '\0';
+//    
+//    ft_memset(buffer, 'k', 10);
+//    ft_memset(buffer + 10, 'o', 10);
+//    printf("ft_memset: %s\n", buffer); 
+//    memset(buffer, 'o', 10);
+//    memset(buffer+10, 'k', 10);
+//    printf("   memset: %s\n", buffer); 
+//}
 

@@ -18,17 +18,17 @@ int ft_isprint(int c) {
     return (0);
 }
 
-#include <ctype.h>
-#include <stdio.h>
-int main() {
-  char input;
-  while (1) {
-    scanf("%c%*c", &input);
-    printf("\n");
-    printf("isprint: %c: %s\n", input,
-           isprint((unsigned char)input) ? "success" : "failure"
-           );
-    printf("ft_isprint: %c: %s\n\n", input,
-           ft_isprint((unsigned char)input) ? "success" : "failure");
-  }
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//int main() {
+//  char input;
+//  while (1) {
+//    scanf("%c%*c", &input);
+//    printf("\n");
+//    printf("isprint: %c: %s\n", input,
+//           isprint((unsigned char)input) ? "success" : "failure"
+//           );
+//    printf("ft_isprint: %c: %s\n\n", input,
+//           ft_isprint((unsigned char)input) ? "success" : "failure");
+//  }
+//}

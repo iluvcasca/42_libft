@@ -23,11 +23,11 @@ char *ft_strchr(const char *s, int c){
     return (0);
 }
 
-#include <string.h>
-#include <stdio.h>
-int main (){
-    char * str= "ilove42";
-    printf("   strchr: %p\n", strchr(str, '4'));
-    printf("ft_strchr: %p\n", ft_strchr(str, '4'));
-    return (1);
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main (){
+//    char * str= "ilove42";
+//    printf("   strchr: %p\n", strchr(str, '4'));
+//    printf("ft_strchr: %p\n", ft_strchr(str, '4'));
+//    return (1);
+//}

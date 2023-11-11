@@ -18,15 +18,15 @@ int ft_tolower(int c) {
     return c;
 }
 
-#include <ctype.h>
-#include <stdio.h>
-int main(){
-    unsigned char input;
-    while (1)
-    {
-        scanf( "%c%*c", &input);
-        printf("tolower: %c\n", tolower((int) input));
-        printf("ft_tolower: %c\n", ft_tolower((int) input));
-    }
-    return (1);
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//int main(){
+//    unsigned char input;
+//    while (1)
+//    {
+//        scanf( "%c%*c", &input);
+//        printf("tolower: %c\n", tolower((int) input));
+//        printf("ft_tolower: %c\n", ft_tolower((int) input));
+//    }
+//    return (1);
+//}

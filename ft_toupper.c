@@ -18,15 +18,15 @@ int ft_toupper(int c) {
     return c;
 }
 
-#include <ctype.h>
-#include <stdio.h>
-int main(){
-    unsigned char input;
-    while (1)
-    {
-        scanf( "%c%*c", &input);
-        printf("toupper: %c\n", toupper((int) input));
-        printf("ft_toupper: %c\n", ft_toupper((int) input));
-    }
-    return (1);
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//int main(){
+//    unsigned char input;
+//    while (1)
+//    {
+//        scanf( "%c%*c", &input);
+//        printf("toupper: %c\n", toupper((int) input));
+//        printf("ft_toupper: %c\n", ft_toupper((int) input));
+//    }
+//    return (1);
+//}

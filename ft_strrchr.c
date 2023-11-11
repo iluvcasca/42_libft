@@ -25,11 +25,11 @@ char *ft_strrchr(const char *s, int c){
     return ptr;
 }
 
-#include <string.h>
-#include <stdio.h>
-int main(){
-    char * str = "hel\0lo";
-    printf("   strrchr: %p\n", strrchr(str,'0'));
-    printf("ft_strrchr: %p\n", ft_strrchr(str,'0'));
-    return 1;
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main(){
+//    char * str = "hel\0lo";
+//    printf("   strrchr: %p\n", strrchr(str,'0'));
+//    printf("ft_strrchr: %p\n", ft_strrchr(str,'0'));
+//    return 1;
+//}

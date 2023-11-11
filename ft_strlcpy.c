@@ -27,15 +27,15 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize) {
   return (src_len);
 }
 
-#include <stdio.h>
-#include <bsd/string.h>
-int main() {
-  char src[] = "hello";
-  char dst[6];
-  printf("size_t: %zu\n", ft_strlcpy(dst, src, 5));
-  printf("dst: %s\n", dst);
-  printf("\nsize_t: %zu\n", strlcpy(dst, src, 5));
-  printf("dst: %s\n", dst);
-
-  return (1);
-}
+//#include <stdio.h>
+//#include <bsd/string.h>
+//int main() {
+//  char src[] = "hello";
+//  char dst[6];
+//  printf("size_t: %zu\n", ft_strlcpy(dst, src, 5));
+//  printf("dst: %s\n", dst);
+//  printf("\nsize_t: %zu\n", strlcpy(dst, src, 5));
+//  printf("dst: %s\n", dst);
+//
+//  return (1);
+//}

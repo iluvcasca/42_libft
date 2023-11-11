@@ -29,16 +29,16 @@ char *ft_strdup(const char *s){
     return s_dupe;
 }
 
-#include <string.h>
-#include <stdio.h>
-int main () {
-    char * str = "hello 42";
-    char * str_dup = ft_strdup(str);
-    char * str_dup1 = strdup(str);
-    printf("original: %s\n", str);
-    printf("ft_strdup: %s\n", str_dup);
-    printf("   strdup: %s\n", str_dup1);
-    free(str_dup);
-    free(str_dup1);
-    return (1);
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main () {
+//    char * str = "hello 42";
+//    char * str_dup = ft_strdup(str);
+//    char * str_dup1 = strdup(str);
+//    printf("original: %s\n", str);
+//    printf("ft_strdup: %s\n", str_dup);
+//    printf("   strdup: %s\n", str_dup1);
+//    free(str_dup);
+//    free(str_dup1);
+//    return (1);
+//}

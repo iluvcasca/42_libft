@@ -22,14 +22,14 @@ void ft_bzero (void *s, size_t n){
     }
 }
 
-#include <string.h>
-#include <stdio.h>
-int main() {
-   char str1[] = "0123456789";
-    char str2[] = "0123456789";
-    ft_bzero (str1 + 8, 2);
-    printf("ft_bzero: %s\n", str1);
-    bzero (str2 + 8, 2);
-    printf("bzero: %s\n", str2);
-    return (1);
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main() {
+//   char str1[] = "0123456789";
+//    char str2[] = "0123456789";
+//    ft_bzero (str1 + 8, 2);
+//    printf("ft_bzero: %s\n", str1);
+//    bzero (str2 + 8, 2);
+//    printf("bzero: %s\n", str2);
+//    return (1);
+//}

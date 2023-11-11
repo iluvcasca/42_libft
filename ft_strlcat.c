@@ -40,16 +40,16 @@ size_t ft_strlcat(char *dst, const char*src, size_t size){
     }
 }
 
-#include <bsd/string.h>
-#include <stdio.h>
-int main ()
-{
-    char dst[30] = "Hello";
-    char dst1[30] = "Hello";
-    char src[2] = {'4','2'};
-    ft_strlcat( dst, src, 10);
-    printf("dst: %s\n", dst);
-    strlcat(dst1 , src, 10);
-    printf("dst1: %s\n", dst1);
-    return (1);
-}
+//#include <bsd/string.h>
+//#include <stdio.h>
+//int main ()
+//{
+//    char dst[30] = "Hello";
+//    char dst1[30] = "Hello";
+//    char src[2] = {'4','2'};
+//    ft_strlcat( dst, src, 10);
+//    printf("dst: %s\n", dst);
+//    strlcat(dst1 , src, 10);
+//    printf("dst1: %s\n", dst1);
+//    return (1);
+//}

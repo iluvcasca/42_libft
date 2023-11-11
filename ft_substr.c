@@ -33,13 +33,13 @@ char *ft_substr(char const *s, unsigned int start, size_t len){
 	}
 }
 
-#include <stdio.h>
+//#include <stdio.h>
 #include <stdlib.h>
-int main ()
-{
-	char *str = "Hello 42";
-	char *sub = ft_substr(str, 0, 5);
-	printf("%s\n",sub);
-	free(sub);
-	return (1);
-}
+//int main ()
+//{
+//	char *str = "Hello 42";
+//	char *sub = ft_substr(str, 0, 5);
+//	printf("%s\n",sub);
+//	free(sub);
+//	return (1);
+//}

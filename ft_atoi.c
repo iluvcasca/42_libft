@@ -35,11 +35,11 @@ int ft_atoi(const char *nptr) {
 }
 
 #include <stdlib.h>
-#include <stdio.h> 
-int main() { 
-	char *nptr = "   \t\n-2147483648   4";
-	printf("   atoi: %i\n", atoi(nptr));
-	printf("ft_atoi: %i\n", ft_atoi(nptr));
-	printf("%u", (unsigned int)-1);
-	return (1);
-}
+//#include <stdio.h> 
+//int main() { 
+//	char *nptr = "   \t\n-2147483648   4";
+//	printf("   atoi: %i\n", atoi(nptr));
+//	printf("ft_atoi: %i\n", ft_atoi(nptr));
+//	printf("%u", (unsigned int)-1);
+//	return (1);
+//}

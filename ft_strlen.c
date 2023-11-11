@@ -19,10 +19,10 @@ size_t ft_strlen(const char *s) {
   return i;
 }
 
-#include <stdio.h>
-#include <string.h>
-int main() {
-    printf("ft_strlen: %zu\n", ft_strlen("hello"));
-    printf("strlen: %zu\n", ft_strlen("hello"));
-    return (1);
-}
+//#include <stdio.h>
+//#include <string.h>
+//int main() {
+//    printf("ft_strlen: %zu\n", ft_strlen("hello"));
+//    printf("strlen: %zu\n", ft_strlen("hello"));
+//    return (1);
+//}

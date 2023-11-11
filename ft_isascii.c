@@ -19,17 +19,17 @@ int ft_isascii(int c) {
     return (0);
 }
 
-#include <ctype.h>
-#include <stdio.h>
-int main() {
-  char input;
-  while (1) {
-    scanf("%c%*c", &input);
-    printf("\n");
-    printf("isascii: %c: %s\n", input,
-           isascii((unsigned char)input) ? "success" : "failure"
-           );
-    printf("ft_isascii: %c: %s\n\n", input,
-           ft_isascii((unsigned char)input) ? "success" : "failure");
-  }
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//int main() {
+//  char input;
+//  while (1) {
+//    scanf("%c%*c", &input);
+//    printf("\n");
+//    printf("isascii: %c: %s\n", input,
+//           isascii((unsigned char)input) ? "success" : "failure"
+//           );
+//    printf("ft_isascii: %c: %s\n\n", input,
+//           ft_isascii((unsigned char)input) ? "success" : "failure");
+//  }
+//}

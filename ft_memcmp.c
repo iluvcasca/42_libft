@@ -26,12 +26,12 @@ int ft_memcmp(const void *s1, const void *s2, size_t n){
     return (0);
 }
 
-#include <string.h>
-#include <stdio.h>
-int main () {
-    int array[3] = { 134, 43434343, 43};
-    int array2[3] = { 134, 43434343, 45};
-    printf("   memcmp: %i\n", memcmp(array, array2, 3* sizeof(int)));
-    printf("ft_memcmp: %i\n", ft_memcmp(array, array2, 3 * sizeof(int)));
-    return (1);
-}
+//#include <string.h>
+//#include <stdio.h>
+//int main () {
+//    int array[3] = { 134, 43434343, 43};
+//    int array2[3] = { 134, 43434343, 45};
+//    printf("   memcmp: %i\n", memcmp(array, array2, 3* sizeof(int)));
+//    printf("ft_memcmp: %i\n", ft_memcmp(array, array2, 3 * sizeof(int)));
+//    return (1);
+//}

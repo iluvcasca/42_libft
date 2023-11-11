@@ -18,17 +18,17 @@ int ft_isalnum(int c) {
     return (0);
 }
 
-#include <ctype.h>
-#include <stdio.h>
-int main() {
-  char input;
-  while (1) {
-    scanf("%c%*c", &input);
-    printf("\n");
-    printf("isalnum: %c: %s\n", input,
-           isalnum((unsigned char)input) ? "success" : "failure"
-           );
-    printf("ft_isalnum: %c: %s\n\n", input,
-           ft_isalnum((unsigned char)input) ? "success" : "failure");
-  }
-}
+//#include <ctype.h>
+//#include <stdio.h>
+//int main() {
+//  char input;
+//  while (1) {
+//    scanf("%c%*c", &input);
+//    printf("\n");
+//    printf("isalnum: %c: %s\n", input,
+//           isalnum((unsigned char)input) ? "success" : "failure"
+//           );
+//    printf("ft_isalnum: %c: %s\n\n", input,
+//           ft_isalnum((unsigned char)input) ? "success" : "failure");
+//  }
+//}

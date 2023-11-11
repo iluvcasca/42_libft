@@ -16,4 +16,4 @@ sed -i ' /#include <stdlib.h>/! {
 for file in *.c; do
     uncomment_range "$file"
 done
-
+echo "main uncommented"

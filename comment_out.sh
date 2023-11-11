@@ -16,4 +16,5 @@ comment_out_range() {
 for file in *.c; do
     comment_out_range "$file"
 done
+echo "main commented out"
 

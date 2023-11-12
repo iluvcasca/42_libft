@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:16:20 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/12 17:33:47 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/12 22:21:55 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char * ft_strnstr(const char *big, const char *little, size_t len){
         return ((char *)big);
     while (big[i] && i != len)
     {
-        if (i + l_little > l_big)
+        if (i + l_little > len || i + l_little > l_big)
             return (NULL);
         else if (!ft_strncmp(big + i, little, l_little))
             return ((char *)big + i);

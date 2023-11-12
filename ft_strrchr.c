@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:56:48 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:07:33 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/12 14:57:27 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ char *ft_strrchr(const char *s, int c){
     char *ptr = 0;
     while (s[i])
     {
-        if (s[i] == c ) 
+        if (s[i] == (char)c ) 
             ptr = (char*)(s + i);
         i++;
     }
-   if (s[i] == c ) 
+   if (s[i] == (char)c ) 
         ptr = (char*)(s+i);
     return ptr;
 }

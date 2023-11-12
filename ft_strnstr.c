@@ -6,41 +6,31 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:16:20 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 18:58:20 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/12 17:33:47 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char * ft_strnstr(const char *big, const char *little, size_t len){
-	size_t i;
-	size_t j;
-	size_t l_little;
-	i = 0;
-	while (little[i])
-		i++;
-	l_little = i;
-	if (!little)
-		return ((char*)big);
-	if (len < l_little)
-		return (NULL);
-	while (i<len && big[i])
-	{
-		j = 0;
-		if (big[i] == little[j])
-		{
-			while (little[j] && big[i+j])
-			{
-				if (big[i+j] != little[j])
-					break;
-				j++;
-			}
-			if (j == l_little)
-				return (char*)(big + i);
-		}	
-		i++;
-	}
-	return (NULL);
+    size_t l_little;
+    size_t l_big;
+    size_t i;
+
+    l_little = ft_strlen (little);
+    l_big = ft_strlen (big);
+    i = 0;
+    if (!little[i])
+        return ((char *)big);
+    while (big[i] && i != len)
+    {
+        if (i + l_little > l_big)
+            return (NULL);
+        else if (!ft_strncmp(big + i, little, l_little))
+            return ((char *)big + i);
+        i++;
+    }
+    return (NULL);
 }
 
 //#include <bsd/string.h>
@@ -57,6 +47,9 @@ char * ft_strnstr(const char *big, const char *little, size_t len){
 //	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 2));
 //	printf("\nft_strnstr: %p\n", ft_strnstr(largestring, smallstring, 40));
 //	printf("   strnstr: %p\n", strnstr(largestring, smallstring, 40));
+//   	printf("\nft_strnstr: %p\n", ft_strnstr("aaabcabcd", "cd", 8));
+//	printf("   strnstr: %p\n", strnstr("aaabcabcd", "cd", 8));
+//
 //
 //
 //

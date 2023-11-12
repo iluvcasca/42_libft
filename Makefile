@@ -21,11 +21,6 @@ clean:
 
 fclean: clean
 	-rm -f $(NAME)
-	-rm -f libft.so
 
 re: fclean all
-
-so:
-	cc -fPIC $(C_FLAGS) $(C_FILES)
-	gcc -shared -o libft.so $(O_FILES)
 

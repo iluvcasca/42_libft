@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:25:12 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 18:58:38 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/13 12:20:49 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,18 @@
 char *ft_substr(char const *s, unsigned int start, size_t len){
 	size_t i = 0;
 	char * sub;
+    size_t l_s = ft_strlen(s);
+    if (start > l_s)
+    {
+        sub = malloc(sizeof(char));
+        if (!sub)
+            return (NULL);
+        *sub = '\0';
+        return (sub);
+    }
 	while (s[start + i] && i != len)
 		i++;
-	sub = malloc(i*sizeof(char)+1);
+	sub = malloc(i*sizeof(char)+sizeof(char));
 	if (!sub)
 		return (NULL);
 	else

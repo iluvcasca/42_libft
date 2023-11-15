@@ -1,12 +1,14 @@
 C_FILES = $(wildcard *.c)
 O_FILES = $(C_FILES:%.c=build/%.o)
-C_FLAGS = -Wall -Werror -Wextra -lbsd
+C_FLAGS = -Wall -Werror -Wextra
 NAME = libft.a 
 
 .PHONY: all clean fclean re
 .DEFAULT: all
 
-all: $(O_FILES)
+all: $(NAME)
+
+$(NAME): $(O_FILES)
 	ar -rcs $(NAME) $^
 
 build:

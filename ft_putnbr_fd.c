@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 18:30:35 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/14 19:22:40 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 11:28:43 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -14,7 +14,6 @@
 
 void ft_putnbr_fd(int n, int fd)
 {
-    ssize_t check;
     int sign;
     long n_c;
     char current;
@@ -24,15 +23,13 @@ void ft_putnbr_fd(int n, int fd)
     if (n_c < 0)
     {
         sign = -1;
-        check = write(fd, "-", sizeof(char));
+        write(fd, "-", sizeof(char));
     }
     n_c *= sign;
     if (n_c/10)
        ft_putnbr_fd(n_c/10,fd);
     current = '0' + n_c%10;
-    check = write(fd, &current, sizeof(char));
-    if (check)
-        check = 0;
+    write(fd, &current, sizeof(char));
 }
 
 // #include <limits.h>

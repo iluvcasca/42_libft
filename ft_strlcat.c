@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 22:54:03 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 14:21:25 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:11:50 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t ft_strlcat(char *dst, const char*src, size_t size){
     l_src = ft_strlen(src);
     l_dst = 0;
     if (!size)
-	    return size;
+	    return l_src;
     while (dst[l_dst] && l_dst != size)
         l_dst++;
     if ( l_dst != size && size) 

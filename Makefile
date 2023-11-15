@@ -1,4 +1,4 @@
-C_FILES = $(wildcard *.c)
+C_FILES = $(filter-out $(wildcard ft_lst*.c), $(wildcard ft_*.c))
 O_FILES = $(C_FILES:%.c=build/%.o)
 C_FLAGS = -Wall -Werror -Wextra
 NAME = libft.a 
@@ -31,3 +31,5 @@ re: fclean all
 so:
 	cc -nostartfiles -fPIC $(C_FLAGS) $(C_FILES)
 	gcc -nostartfiles -shared -o libft.so $(O_FILES)
+
+bonus:

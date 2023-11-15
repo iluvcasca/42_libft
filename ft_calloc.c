@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:00:33 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/13 12:01:07 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 14:52:28 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void *ft_calloc(size_t nmemb, size_t size) {
     return (0);
   else {
     void *ptr = malloc(nmemb * size);
+    if (!ptr)
+	    return (0);
     ft_bzero(ptr, nmemb * size);
     return (ptr);
   }

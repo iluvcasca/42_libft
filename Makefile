@@ -23,6 +23,11 @@ clean:
 
 fclean: clean
 	-rm -f $(NAME)
+	-rm -f libft.so
+	-rm -f *.out
 
 re: fclean all
 
+so:
+	cc -nostartfiles -fPIC $(C_FLAGS) $(C_FILES)
+	gcc -nostartfiles -shared -o libft.so $(O_FILES)

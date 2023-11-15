@@ -6,13 +6,29 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:24:14 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 15:35:57 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 17:22:18 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdlib.h>
 
-// lancer le debugeur avec intmin hehe
+static unsigned int	c_size(int n, unsigned int *p_n, int *sign)
+{
+	unsigned int	size;
+
+	size = 1;
+	*sign = 1;
+	if (n < 0 && size++)
+		*sign = -1;
+	*p_n = *sign * n;
+	while (*p_n / 10)
+	{
+		size++;
+		*p_n /= 10;
+	}
+	return (size);
+}
+
 char	*ft_itoa(int n)
 {
 	unsigned int	p_n;
@@ -20,16 +36,7 @@ char	*ft_itoa(int n)
 	unsigned int	size;
 	char			*a;
 
-	sign = 1;
-	size = 1;
-	if (n < 0 && size++)
-		sign = -1;
-	p_n = sign * n;
-	while (p_n / 10)
-	{
-		size++;
-		p_n /= 10;
-	}
+	size = c_size(n, &p_n, &sign);
 	a = malloc(sizeof(char) * (size + 1));
 	if (!a)
 		return (NULL);
@@ -46,11 +53,14 @@ char	*ft_itoa(int n)
 	return (a);
 }
 
-// #include <stdio.h>
-// #include <limits.h>
-// int main()
-// {
-//     char* a = ft_itoa(INT_MIN);
-//     printf("%s\n", a);
-//     free(a);
-// }
+//#include <limits.h>
+//#include <stdio.h>
+//
+// int	main(void)
+//{
+//	char	*a;
+//
+//	a = ft_itoa(INT_MIN);
+//	printf("%s\n", a);
+//	free(a);
+//}

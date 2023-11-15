@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:17 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 15:37:03 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 17:09:12 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	overlap = 0;
 	if (dest == src)
 		return (dest);
-	// else if (dest < src && dest+n >= src)
-	//	overlap = 1;
 	else if (dest > src && src + n >= dest)
 		overlap = 2;
 	if (overlap == 2)
@@ -40,8 +38,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 
 //#include <stdio.h>
-#include <stdlib.h>
-
+//#include <stdlib.h>
 //#include <string.h>
 // int main() {
 //  char str[15] = "Hello42";

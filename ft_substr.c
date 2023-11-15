@@ -6,12 +6,27 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:25:12 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 15:47:48 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 16:03:04 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+static char	*create_sub(const char *s, char *sub, unsigned int start,
+		size_t len)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[start + i] && i != len)
+	{
+		sub[i] = s[start + i];
+		i++;
+	}
+	sub[i] = '\0';
+	return (sub);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -36,13 +51,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	else
 	{
-		i = 0;
-		while (s[start + i] && i != len)
-		{
-			sub[i] = s[start + i];
-			i++;
-		}
-		sub[i] = '\0';
+		sub = create_sub(s, sub, start, len);
 		return (sub);
 	}
 }

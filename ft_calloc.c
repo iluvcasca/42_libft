@@ -6,32 +6,35 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:00:33 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 14:52:28 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:42:48 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 #include <limits.h>
+#include <stdlib.h>
 
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void	*ptr;
 
-void *ft_calloc(size_t nmemb, size_t size) {
-  if (!nmemb || !size)
-    return malloc(0);
-  else if (nmemb > INT_MAX / size)
-    return (0);
-  else {
-    void *ptr = malloc(nmemb * size);
-    if (!ptr)
-	    return (0);
-    ft_bzero(ptr, nmemb * size);
-    return (ptr);
-  }
+	if (!nmemb || !size)
+		return (malloc(0));
+	else if (nmemb > INT_MAX / size)
+		return (0);
+	else
+	{
+		ptr = malloc(nmemb * size);
+		if (!ptr)
+			return (0);
+		ft_bzero(ptr, nmemb * size);
+		return (ptr);
+	}
 }
 
 //#include <stdio.h>
-#include <stdlib.h>
-//int main() {
+//#include <stdlib.h>
+// int main() {
 //  printf("overflow:\n");
 //  void *p1 = calloc((size_t)-1, (size_t)-1);
 //  printf("   calloc: %p\n", p1);

@@ -6,21 +6,22 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:26:03 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:04:20 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:35:30 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int ft_isalnum(int c) {
-  if ((c >= '0' && c <= '9') || ((c >= 'A' && c <= 'Z') || (c>= 'a' && c <= 'z')))
-    return (c);
-  else
-    return (0);
+int	ft_isalnum(int c)
+{
+	if ((c >= '0' && c <= '9') || ((c >= 'A' && c <= 'Z') || (c >= 'a'
+				&& c <= 'z')))
+		return (c);
+	else
+		return (0);
 }
 
 //#include <ctype.h>
 //#include <stdio.h>
-//int main() {
+// int main() {
 //  char input;
 //  while (1) {
 //    scanf("%c%*c", &input);

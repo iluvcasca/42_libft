@@ -6,21 +6,21 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:43:21 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/11 15:09:30 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:38:55 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int ft_tolower(int c) {
-  if (c >= 'A' && c <= 'Z')
-    return (c + ('a' - 'A'));
-  else
-    return c;
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c + ('a' - 'A'));
+	else
+		return (c);
 }
 
 //#include <ctype.h>
 //#include <stdio.h>
-//int main(){
+// int main(){
 //    unsigned char input;
 //    while (1)
 //    {

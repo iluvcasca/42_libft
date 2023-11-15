@@ -6,26 +6,29 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:44:54 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/12 14:55:29 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:38:02 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
 
-char *ft_strchr(const char *s, int c){
-    int i = 0;
-    while (s[i]){
-        if (s[i] == (char)c )
-            return (char*)(s+i);
-        i++;
-    }
-    if (s[i] == (char)c) 
-        return (char *)(s+i);
-    return (0);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return (char *)(s + i);
+		i++;
+	}
+	if (s[i] == (char)c)
+		return (char *)(s + i);
+	return (0);
 }
 
 //#include <string.h>
 //#include <stdio.h>
-//int main (){
+// int main (){
 //    char * str= "ilove42";
 //    char * str1 = "";
 //    printf("   strchr: %p\n", strchr(str, '4'));

@@ -6,32 +6,35 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:42:54 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/14 17:12:00 by kgriset          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:38:07 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 
-char *ft_strdup(const char *s){
-    char *s_dupe;
-    unsigned int i = 0;
-    while (s[i])
-        i++;
-    s_dupe = malloc((i+1) * sizeof(char));
-    if (!s_dupe)
-        return 0;
-    i = 0;
-    while (s[i])
-    {
-        s_dupe[i] = s[i];
-        i++;
-    }
-    s_dupe[i] = s[i];
-    return s_dupe;
+char	*ft_strdup(const char *s)
+{
+	char			*s_dupe;
+	unsigned int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	s_dupe = malloc((i + 1) * sizeof(char));
+	if (!s_dupe)
+		return (0);
+	i = 0;
+	while (s[i])
+	{
+		s_dupe[i] = s[i];
+		i++;
+	}
+	s_dupe[i] = s[i];
+	return (s_dupe);
 }
 
 //#include <string.h>
 //#include <stdio.h>
-//int main () {
+// int main () {
 //    char * str = "hello 42";
 //    char * str_dup = ft_strdup(str);
 //    char * str_dup1 = strdup(str);

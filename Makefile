@@ -32,8 +32,8 @@ fclean: clean
 re: fclean all
 
 so:
-	cc -nostartfiles -fPIC $(C_FLAGS) $(C_FILES)
-	gcc -nostartfiles -shared -o libft.so $(O_FILES)
+	cc -nostartfiles -fPIC $(C_FLAGS) $(C_FILES) $(B_C_FILES)
+	gcc -nostartfiles -shared -o libft.so $(O_FILES) $(B_O_FILES)
 
 bonus: $(B_O_FILES)
 	ar -rcs $(NAME) $^

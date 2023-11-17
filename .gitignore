@@ -54,4 +54,5 @@ dkms.conf
 *.vscode
 
 libftTester
+libft-war*
 

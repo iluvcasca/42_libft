@@ -6,11 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:38:27 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 17:04:40 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/01/30 12:00:46 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdlib.h>
 
 static void	free_split(char **split, char *s_trimmed, size_t size)
 {

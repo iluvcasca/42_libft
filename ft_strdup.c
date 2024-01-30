@@ -6,10 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:42:54 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 15:38:07 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/01/30 12:00:58 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

@@ -6,11 +6,10 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:24:14 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 17:22:18 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/01/30 12:00:26 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdlib.h>
 
 static unsigned int	c_size(int n, unsigned int *p_n, int *sign)
 {

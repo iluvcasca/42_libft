@@ -6,12 +6,11 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:25:12 by kgriset           #+#    #+#             */
-/*   Updated: 2023/11/15 16:03:04 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/01/30 12:01:05 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static char	*create_sub(const char *s, char *sub, unsigned int start,
 		size_t len)

@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 11:49:14 by kgriset           #+#    #+#             */
-/*   Updated: 2024/01/30 11:58:33 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/01/30 12:53:12 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@ int	*ft_atoi_safe(char *string)
 	while (string[i])
 	{
         is_digit = ft_isdigit(string[i]);
-		if (is_digit && value >= INT_MAX / 10 && string[i]
+        if (is_digit && value >= INT_MAX / 10 && string[i]
 			- '0' >= 8)
             return (NULL);
-		else if (is_digit)
+        else if (is_digit)
 			value = value * 10 + string[i] - '0';
+        else
+            return (NULL);
 	}
     r_value = malloc(sizeof(value));
     if (r_value)

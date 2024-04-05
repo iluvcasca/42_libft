@@ -6,13 +6,13 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:45:34 by kgriset           #+#    #+#             */
-/*   Updated: 2024/03/10 15:52:38 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/04/05 09:40:25 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if(!write(fd, &c, sizeof(char)))
-        return;
+	if (!write(fd, &c, sizeof(char)))
+		return ;
 }

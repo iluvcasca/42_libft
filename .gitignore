@@ -55,4 +55,4 @@ dkms.conf
 
 libftTester
 libft-war*
-
+.ccls*
